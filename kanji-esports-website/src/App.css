@@ -1,0 +1,244 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+
+
+
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #2e4c9c;
+  border-bottom: 2px solid #2e4c9c;
+}
+
+.navbar-logo {
+  height: 100px; /* Passen Sie die Höhe des Logos nach Bedarf an */
+}
+
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.hero-icons a {
+  color: #fff;
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-icons a:hover {
+  transform: scale(1.2);
+  color: #00acee; /* Optional: Farbe für Hover-Zustand */
+}
+
+.hero-arrow {
+  margin-top: 2rem;
+}
+
+.hero-arrow i {
+  color: #fff;
+  font-size: 2.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.team-section {
+  padding: 50px 0;
+  background-color: #121212;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-display {
+  width: 100%;
+}
+
+.player-card {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.player-card-inner {
+  text-align: center;
+  background-color: grey; /* Abhebung vom Hauptbackground */
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.player-card-inner:hover {
+  transform: scale(1.05);
+}
+
+.player-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.player-info h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.player-role {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #e0d4f5; /* Leichter Akzent für die Rolle */
+}
+
+h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.footer-section {
+  background-color: #121212;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section h5 {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+button {
+  background-color: #5a00ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4500c9;
+}
+
+.back-btn {
+  margin-top: 50px;
+}
+
+#meetSquadText {
+  margin-top: 150px;
+}
+.player-icons a:hover {
+  transform: scale(1.2);
+  color: #00acee; /* Optional: Farbe für Hover-Zustand */
+}
+.player-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.about-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+@keyframes wobble {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  15% {
+    transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-5%) rotate(-1deg);
+  }
+}
+
+.game-card:hover {
+  animation: wobble 3s ease;
+}
